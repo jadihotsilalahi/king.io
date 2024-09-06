@@ -389,13 +389,13 @@
   }
   .banner_social_link li {
       display: inline-block;
-      margin-right: 12px;
+      margin-right: 13px;
   }
   .banner_social_link li a{
       color: #ffb400;
       border: 1px solid #ffb400;
-      width: 45px;
-      height: 45px;
+      width: 47px;
+      height: 47px;
       line-height: 40px;
       border-radius: 50%;
       text-align: center;
