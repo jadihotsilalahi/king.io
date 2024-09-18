@@ -442,45 +442,7 @@ $(document).ready(function() {
 					</div>
 				</div>
 			</section>
-		<!-- END BLOG -->
-		 <section>
-			<section id="blog" class="dark_bg section_padding">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 col-sm-12-col-xs-12">
-						<div class="section_heading text-center">							
-							<h2>Quiz<span>Happy 😉</span></h2>
-							<p>"Exploring a myriad of topics through insightful narratives, v<br>captivating visuals, and expert analysis in my blogs."</p>
-							<div class="sm_border"></div>
-						</div>	
-					</div>	
-			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				<div class="single_blog wow fadeInUp">
-					<div class="blog-thumb">
-							<div class="blog-info">
-								<a href="#"><h4>"Quiz Matematika"</h4></a>
-								<small><i class="fa fa-clock-o"></i>Agustus 31, 2024</small>
-								<span>| Education</span>											
-								<p>Bosan dengan rutinitas? skuy gas Quiz dasar Managemen Bisnis ,dan dapatkan sertifikat eksklusif secara gratis. <br><br></p>
-								<a href="https://forms.gle/BeAxyT621NRUoKs97" class="btn btn-default blog_btn main_btn">Gass Skuy !</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12">
-					<div class="single_blog wow fadeInUp">
-						<div class="blog-thumb">
-								<div class="blog-info">
-									<a href="#"><h4>"Quiz Managemen Bisnis "</h4></a>
-									<small><i class="fa fa-clock-o"></i>Agustus 31, 2024</small>
-									<span>| Education</span>											
-									<p>Bosan dengan rutinitas? skuy gas Quiz dasar Managemen Bisnis ,dan dapatkan sertifikat eksklusif secara gratis.</p>
-									<a href="https://forms.gle/eHDhTpGYCw7tF1yq5" class="btn btn-default blog_btn main_btn">Gass Skuy !</a>
-								</div>
-							</div>
-						</div>
-					</div>
+		
 
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="single_blog wow fadeInUp">
@@ -499,43 +461,134 @@ $(document).ready(function() {
 
 			
 		
-		<!-- START CONTACT -->
-			<section id="contact" class="dark_bg section_padding">
-				<div class="container">
-					<div class="col-md-12 col-sm-12-col-xs-12">
-						<div class="section_heading text-center">							
-							<h2>Contact <span>Me</span></h2>
-							<p>"Reach out and let's connect to explore opportunities, collaborations, or any inquiries."</p>
-							<div class="sm_border"></div>
-						</div>	
-					</div>	
-					
-					<div class="row">						
-						<div class="col-md-12 col-sm-12">
-							<form class="form" name="enq" method="post" action="contact.php" onsubmit="return validation();">
-								<div class="row">
-									<div class="form-group col-md-4">
-										<input type="text" name="name" class="form-control" placeholder="Name" required="required">
-									</div>
-									<div class="form-group col-md-4">
-										<input type="email" name="email" class="form-control" placeholder="Email" required="required">
-									</div>
-									<div class="form-group col-md-4">
-										<input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
-									</div>
-									<div class="form-group col-md-12">
-										<textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required"></textarea>
-									</div>
-									<div class="col-md-12 text-center">
-										<button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-default main_btn" title="Submit Your Message!">Send Message</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</section>
-		<!-- END CONTACT -->
+		
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <button id="colorButton">
+        <i class="fas fa-lightbulb"></i>
+    </button>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transisi warna halus */
+    text-align: center;
+    padding-top: 100px;
+}
+
+buttonj {
+    width: 36x;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: fixed; /* Agar tombol tetap di pojok */
+    top: 20px;
+    right: 20px;
+}
+
+button:hover {
+    background-color: #f39c12; /* Ubah warna saat hover */
+}
+
+button i {
+    color: rgb(244, 248, 19);
+    font-size: 32px;
+    top: 20px;
+    right: 20px;
+}
+
+.light-mode {
+    background-color: white; /* Mode terang */
+    color: black;
+}
+
+.dark-mode {
+    background-color: black; /* Mode gelap */
+    color: white;
+}
+
+    </style>
+    <script >
+        const button = document.getElementById('colorButton');
+const body = document.body;
+let isDarkMode = false;
+
+// Fungsi untuk mengubah antara light mode dan dark mode
+function toggleMode() {
+    if (isDarkMode) {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+    } else {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+    }
+    isDarkMode = !isDarkMode;
+}
+
+// Menambahkan event listener untuk tombol
+button.addEventListener('click', toggleMode);
+
+    </script>
+
+<!-- START CONTACT -->
+<section id="contact" class="dark_bg section_padding">
+    <div class="container">
+        <div class="col-md-12 col-sm-12-col-xs-12">
+            <div class="section_heading text-center">
+                <h2>Contact <span>Us</span></h2>
+                <p>"Reach out and let's connect to explore opportunities, collaborations, or any inquiries."</p>
+                <div class="sm_border"></div>
+            </div>  
+        </div>  
+        
+        <div class="row">                        
+            <div class="col-md-12 col-sm-12">
+                <form id="contact-form" onsubmit="sendMail(); return false;">
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <input type="text" id="subject" class="form-control" placeholder="Subject" required="required">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea rows="6" id="message" class="form-control" placeholder="Your Message" required="required"></textarea>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-default main_btn" title="Submit Your Message!">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function sendMail() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+
+    var mailtoLink = 'mailto:testinglah22@gmail.com'
+                   + '?subject=' + encodeURIComponent(subject)
+                   + '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+
+    window.location.href = mailtoLink;
+}
+</script>
+
+<!-- END CONTACT -->
 		
 		<!-- START FOOTER -->
 			<div class="footer">
